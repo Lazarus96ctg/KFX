@@ -195,50 +195,50 @@ try:
         # Construir linha de dados
         line = (
             f"{path_line:<65}"  # Case_name
-            f"{'Jet_release_data:':<20}"  # data_type
-            f"{TMAX:<25}"  # tmax
-            f"{jet_position:<22}"  # jet_position
-            f"{str(MSTEP):<8}"  # mstep
-            f"{jet_direction:<18}"  # jet_direction
-            f"{str(res_temperature):<16}"  # res_temperature
-            f"{str(jet_pressure):<12}"  # jet_pressure
-            f"{str(jet_flowrate):<12}"  # jet_flowrate
-            f"{str(jet_diameter):<12}"  # jet_diameter
-            f"{transient_jet:<60}"  # transient_jet
-            f"{jet_gas_components:<80}"  # jet_gas_components
-            f"{jet_gas_composition:<80}"  # jet_gas_composition
-            f"{LIQUID_COMPOSITION:<40}"  # liquid_composition
-            f"{str(GAS_CLOUD_SIM):<14}"  # gas_cloud_sim
-            f"{str(wind_angle):<10}"  # wind_angle
-            f"{str(wind_10):<10}"  # wind_10
-            f"{wind_stability:<14}"  # wind_stability
-            f"{str(wind_Z0):<10}"  # wind_Z0
-            f"{str(ambient_T):<10}"  # ambient_T
-            f"{str(wind_roughness):<14}"  # wind_roughness
-            f"{GEOMETRY_FILE:<40}"  # geometry_file
-            f"{geometry_min:<18}"  # geometry_min
-            f"{geometry_max:<18}"  # geometry_max
-            f"{VOL_BOX_MIN:<22}"  # vol_box_min
-            f"{VOL_BOX_MAX:<22}"  # vol_box_max
-            f"{str(STOPPRO):<10}"  # stoppro
-            f"{str(DT_ROWCUM):<10}"  # dt_rowcum
-            f"{str(DT_VOLSTOP):<10}"  # dt_volstop
-            f"{str(gridpoints):<12}"  # gridpoints (now from Excel)
-            f"{lockedplanes:<12}"  # lockedplanes
-            f"{spray_file:<18}"  # spray_file
-            f"{jet_gas_massflow:<18}"  # jet_gas_massflow
-            f"{jet_gas_time:<18}"  # jet_gas_time
-            f"{grid_parameters:<30}"  # grid_parameters
-            f"{block_parameters:<30}"  # block_parameters
-            f"{sub_block:<30}"  # sub_block
-            f"{pool_parameters:<40}"  # pool_parameters
-            f"{time_controls:<30}"  # time_controls
-            f"{history_points:<12}"  # history_points
-            f"{subsea_parameters:<40}"  # subsea_parameters
-            f"{rbm:<60}"  # rbm
-            f"{xmlspray:<30}"  # xmlspray
-            f"{expanded_parameters:<40}"  # expanded_parameters
-            f"{vistemp_parameters:<30}\n"  # vistemp_parameters
+            + "'Jet_release_data:'".ljust(20)  # data_type (now quoted)
+            + f"{TMAX:<25}"  # tmax
+            + f"{jet_position:<22}"  # jet_position
+            + f"{str(MSTEP):<8}"  # mstepS
+            + f"{jet_direction:<18}"  # jet_direction
+            + f"{str(res_temperature):<16}"  # res_temperature
+            + f"{str(jet_pressure):<12}"  # jet_pressure
+            + f"{str(jet_flowrate):<12}"  # jet_flowrate
+            + f"{str(jet_diameter):<12}"  # jet_diameter
+            + f"{transient_jet:<60}"  # transient_jet
+            + f"{ jet_gas_components:<80}"  # jet_gas_components
+            + f"{jet_gas_composition:<80}"  # jet_gas_composition
+            + f"{LIQUID_COMPOSITION:<40}"  # liquid_composition
+            + f"{str(GAS_CLOUD_SIM):<14}"  # gas_cloud_sim
+            + f"{str(wind_angle):<10}"  # wind_angle
+            + f"{str(wind_10):<10}"  # wind_10
+            + f"{wind_stability:<14}"  # wind_stability
+            + f"{str(wind_Z0):<10}"  # wind_Z0
+            + f"{str(ambient_T):<10}"  # ambient_T
+            + f"{str(wind_roughness):<14}"  # wind_roughness
+            + f"{GEOMETRY_FILE:<40}"  # geometry_file
+            + f"{geometry_min:<18}"  # geometry_min
+            + f"{geometry_max:<18}"  # geometry_max
+            + f"{VOL_BOX_MIN:<22}"  # vol_box_min
+            + f"{VOL_BOX_MAX:<22}"  # vol_box_max
+            + f"{str(STOPPRO):<10}"  # stoppro
+            + f"{str(DT_ROWCUM):<10}"  # dt_rowcum
+            + f"{str(DT_VOLSTOP):<10}"  # dt_volstop
+            + f"{str(gridpoints):<12}"  # gridpoints (now from Excel)
+            + f"{lockedplanes:<12}"  # lockedplanes
+            + f"{spray_file:<18}"  # spray_file
+            + f"{jet_gas_massflow:<18}"  # jet_gas_massflow
+            + f"{jet_gas_time:<18}"  # jet_gas_time
+            + f"{grid_parameters:<30}"  # grid_parameters
+            + f"{block_parameters:<30}"  # block_parameters
+            + f"{sub_block:<30}"  # sub_block
+            + f"{pool_parameters:<40}"  # pool_parameters
+            + f"{time_controls:<30}"  # time_controls
+            + f"{history_points:<12}"  # history_points
+            + f"{subsea_parameters:<40}"  # subsea_parameters
+            + f"{rbm:<60}"  # rbm
+            + f"{xmlspray:<30}"  # xmlspray
+            + f"{expanded_parameters:<40}"  # expanded_parameters
+            + f"{vistemp_parameters:<30}\n"  # vistemp_parameters
         )
 
         # Salvar arquivo SCN
